@@ -21,11 +21,8 @@ function selectImageType(img) {
     if(imgClass === 'class-error') div.innerHTML = `
         ERROR in image class name<br><br>
         class name <b><i>${img.className}</i></b> not supported`;
-    else {
-        div.style.backgroundImage = `url(${img.src})`;
-        //  if (img.clientWidth > img.clientHeight) 
-    }
-
+    else div.style.backgroundImage = `url(${img.src})`;
+    
     MAIN.insertBefore(div, img);
     img.remove();
 }

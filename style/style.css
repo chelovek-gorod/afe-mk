@@ -92,7 +92,7 @@ main div {
     background-color: transparent;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 100%;
+    background-size: cover; /* add this if inline-style property is empty */
 }
 
 main .full-width {
