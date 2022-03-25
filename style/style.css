@@ -88,21 +88,41 @@ main {
     margin: 120px auto 40px;
 }
 
-main img {
-	width: 300px;
-	height: auto;
+main div {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
 }
+
 main .full-width {
-	display: block;
-	margin: 0 auto;
+    width: 800px;
+    height: 400px;
+	margin: 20px 0;
 }
 main .float-left {
-	float: left;
-	margin-left: 30px;
+    float: left;
+    width: 400px;
+    height: 400px;
+	margin: 20px 20px 20px 0;
 }
 main .float-right {
 	float: right;
-	margin-right: 30px
+	width: 400px;
+    height: 400px;
+	margin: 20px 0 20px 20px;
+}
+
+main .class-error {
+    box-sizing: border-box;
+    width: 800px;
+    height: 100px;
+	margin: 20px 0;
+    padding: 20px;
+    border: 5px solid #ff0000;
+    text-align: center;
+    color:#ff0000;
+    background-color: #ffffff;
 }
 
 h1, h2, h3, h4, h5, h6 {
