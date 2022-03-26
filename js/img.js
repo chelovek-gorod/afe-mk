@@ -7,6 +7,9 @@ let imagesArrSize = ImagesArr.length;
 
 ImagesArr.forEach(img => selectImageType(img));
 
+window.onload = recalculateHeaderHeight;
+window.addEventListener('resize', recalculateHeaderHeight);
+
 function selectImageType(img) {
 
     let div = document.createElement('div');
@@ -17,7 +20,7 @@ function selectImageType(img) {
         || img.className === 'float-right')
         ?  img.className : 'class-error';
 
-    div.className = imgClass; console.log('imgClass =', imgClass);
+    div.className = imgClass;
 
     if(imgClass === 'class-error') div.innerHTML = `
         ERROR in image class name<br><br>
@@ -28,7 +31,8 @@ function selectImageType(img) {
     img.remove();
 }
 
-window.addEventListener('resize', () => {
+function recalculateHeaderHeight() {
     MAIN.style.margin = `${HEADER.clientHeight + 20}px auto 40px`;
     console.log('get resize');
-});
+    console.log('recalculateHeaderHeight');
+}
