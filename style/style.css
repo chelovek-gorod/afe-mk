@@ -79,14 +79,16 @@ header .button-3 {
 	border-radius: 30px;
 }
 header .hover-1:hover {
-	filter: hue-rotate(90deg);
+    -webkit-filter: hue-rotate(45deg);
+	filter: hue-rotate(45deg);
 }
 header .hover-2:hover {
 	top: -6px;
 }
 header .hover-3:hover {
 	top: -6px;
-	filter: hue-rotate(90deg);
+    -webkit-filter: hue-rotate(45deg);
+	filter: hue-rotate(45deg);
 }
 
 main {

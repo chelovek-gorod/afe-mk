@@ -3,7 +3,6 @@
 const HEADER = document.querySelector('header');
 const MAIN = document.querySelector('main');
 const ImagesArr = Array.from(MAIN.querySelectorAll('img'));
-let imagesArrSize = ImagesArr.length;
 
 ImagesArr.forEach(img => selectImageType(img));
 
@@ -33,6 +32,4 @@ function selectImageType(img) {
 
 function recalculateHeaderHeight() {
     MAIN.style.margin = `${HEADER.clientHeight + 20}px auto 40px`;
-    console.log('get resize');
-    console.log('recalculateHeaderHeight');
 }
